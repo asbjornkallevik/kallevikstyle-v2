@@ -1,0 +1,22 @@
+// --- Fonts ---
+// Montserrat and Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$montserrat: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+$font-headline: $montserrat;
+$font-copy: $opensans;
+
+// --- Colors ---
+$black: #2B2B2B;
+$white: #FFF;
+$pink: #ED1C73;
+$blue: #468ED1;
+$lightblue: #88AED1;
+
+$col-copy: $black;
+$col-bg: $white;
+$col-brand: $pink;
+$col-blue: $blue;
+$col-lightblue: $lightblue;

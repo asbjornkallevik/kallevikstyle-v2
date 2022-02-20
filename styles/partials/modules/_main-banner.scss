@@ -1,0 +1,69 @@
+.main-banner {
+  // background-color: lightgrey;
+  height: 100vh;
+  position: relative;
+
+  &__logo {
+    margin: 0 auto;
+    width: 60%;
+    height: 200px;
+    // border: 1px dashed red;
+    background-image: url("../../../public/images/logo.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__presentation {
+    text-align: center;
+    margin-top: 20vh;
+    // border: 1px dashed yellow;
+  }
+  &__text {
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 0.9rem;
+  }
+  &__button-wrapper {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+  }
+  &__button {
+    position: relative;
+    transition: color 1s;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    &:hover {
+      background-color: transparent;
+    }
+    span {
+      position: absolute;
+      z-index: -1;
+      width: 25%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: $col-brand;
+      transform-origin: bottom;
+      transform: scaleY(0);
+      transition: all 0.5s;
+    }
+    &:hover span {
+      transform: scaleY(1);
+    }
+    #bg2 {
+      left: 25%;
+      transition-delay: 0.15s;
+    }
+    #bg3 {
+      left: 50%;
+      transition-delay: 0.3s;
+    }
+    #bg4 {
+      left: 75%;
+      transition-delay: 0.45s;
+    }
+  }
+}

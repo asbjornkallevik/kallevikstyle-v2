@@ -1,0 +1,90 @@
+body {
+    font-family: $font-copy;
+    font-size: 16px;
+}
+a {
+    color: $col-blue;
+}
+
+h1, h2 {
+    font-family: $font-headline;
+    font-weight: 200;
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3, h4 {
+    font-family: $font-headline;
+    font-weight: 200;
+}
+h3 {
+    color: $col-blue;
+    font-size: 1.4rem;
+}
+h4 {
+    color: $col-lightblue;
+    font-size: 1.2rem;
+}
+.card {
+    border: none;
+}
+
+
+
+// --- Buttons
+.btn {
+    border-radius: 0;
+    font-family: $font-headline;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.btn-primary {
+    background-color: transparent;
+    color: $col-brand;
+    border-color: $col-brand;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $col-brand;
+        color: $col-bg;
+        border-color: $col-brand;
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+}
+.btn-info {
+    background-color: transparent;
+    color: $col-copy;
+    border-color: $col-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $col-blue;
+        color: $col-bg;
+        border-color: $col-blue;
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+}
+
+// --- Form controls
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    color: $col-copy;
+    border-bottom: 1px solid $col-blue;
+}

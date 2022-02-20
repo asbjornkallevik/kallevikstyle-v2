@@ -1,0 +1,24 @@
+// --- Site navigation
+
+.navbar {
+  // display: none;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 200px;
+  background-color: $col-blue;
+
+  &__item {
+    color: $col-bg;
+    width: 40px;
+
+    &:hover {
+      background-color: $col-lightblue;
+      color: $col-bg;
+    }
+  }
+}
+
+.navbar-expand-md .navbar-nav {
+  flex-direction: column;
+}
